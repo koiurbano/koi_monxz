@@ -4,7 +4,9 @@ html{
     width: 100%;
 }
 
-
+.white{
+    color: #fff;
+}
 
 body{
     margin: 0;
@@ -17,6 +19,26 @@ body{
     font-family: 'Quicksand', sans-serif;
     color:#fff;
 }
+
+.music{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    
+}
+
+.headphones{
+    animation: moverLeft 1.5s ease;
+}
+
+.nomostrar{
+    display: none;
+}
+
+.mostrar{
+    display: initial;
+}
+
 
 .neon{
     position: absolute;
@@ -53,6 +75,23 @@ body{
     opacity: .5;
     filter: blur(50px);
 }
+
+
+@keyframes moverLeft{
+    0%{
+        opacity: 0;
+        transform: translatex(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+
+
+
+
 
 
 @media (max-width: 575.98px) { 
